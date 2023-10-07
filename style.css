@@ -9,6 +9,7 @@
 html{
     font-size:  62.5%;
     box-sizing: border-box;
+    scroll-snap-type: y mandatory;
 }
 
 body{
@@ -205,6 +206,8 @@ footer p{
     text-align: center;
     margin: 2rem 0rem;
 }
+
+
 /*responsive celular*/
 @media (width <= 768px){
     .nav{
@@ -220,5 +223,13 @@ footer p{
     }
     .fields-container{
         display: block;
+    }
+}
+@media (width>= 768px){
+    .service,
+    .nav,
+    .form{
+        scroll-snap-align: center;
+        scroll-snap-stop: always;
     }
 }
